@@ -53,10 +53,11 @@ var_dump($basketMatches2022);
 
 <body>
     <ul>
-        <?php foreach ($basketMatches2022 as $match) ?>
+        <?php foreach ($basketMatches2022 as $match): ?>
         <li>
-            <?php echo $match['homeTeam'] ?>
+            <?php echo $match['homeTeam'] . ' - ' . $match['visitingTeam'] . ' | ' . $match['homeTeamPoints'] . ' - ' . $match['visitingTeamPoints'] ?>
         </li>
+        <?php endforeach; ?>
     </ul>
 </body>
 
